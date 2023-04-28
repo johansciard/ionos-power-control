@@ -40,7 +40,7 @@ Inside of the cube (if not using Cloud Init) run:
 ```
 git clone https://github.com/johansciard/ionos-power-control.git
 ```
-**Note if Git is not desired on the cube, create a new file with with the contents of the auto-shutdown.sh.**
+**Note: if Git is not desired on the cube, create a new file with with the contents of the auto-shutdown.sh.**
 
 Go to the directory of the cloned repos (only if step above was performed, otherwise navigate to the place where file was created):
 ```
