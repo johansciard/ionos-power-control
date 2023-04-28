@@ -25,10 +25,11 @@ apt-get -y install samba-common
 **Note that the Cube script will require relevant permissions to remote shutoff the Servers.**
 
 ### Linux Server Setup
-> - Ensure that the SSH key of the Cube is present in the Server - either a new SSH key generated from the Cube or that the Public Key RSA for the Servers exist in the Cube.
+> - Ensure that the root user on the Cube can access the Linux servers on the LAN via SSH keys - either a new SSH key generated from the Cube or that the Public Key RSA for the Servers exist in the Cube.
 > - Connect the Server to the **Private LAN of the Cube** to ensure that the NICs can be picked up correctly for selective shut off/down of specific servers.
 
 ### Windows Server Setup
+> - Ensure that there is a user with relevant privileges to be able to shutdown the Windows Server - the default administrator can be used for testing purposes, but should not be used for actual running of the script inside the organisation/individual's systems (regardless of environment).
 > - Connect the Server to the **Private LAN of the Cube** to ensure that the NICs can be picked up correctly for selective shut off/down of specific servers.
 > - Add a remote shutdown security policy - for more information on the steps and considerations: https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/shut-down-the-system.
 > - Add registry keys to disable UAC remote restrictions - for more information on the steps and considerations: https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/user-account-control-and-remote-restriction.
@@ -65,6 +66,7 @@ Once all properties are as desired, run the following command to shut down all s
 ```
 bash auto-shutdown.sh
 ```
+**Note: For full automation it is recommended to integrate the script with a Linux CRON job to schedule the stop (and start) of the servers at specific times.**
 
 To start servers automatically run the following command or run a scheduled task that interacts with the script on a cron job:
 
