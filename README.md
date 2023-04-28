@@ -1,4 +1,4 @@
-# ionos-power-control
+# IONOS Cloud Power OFF/ON Servers without exposing them to Internet
 Script for Powering on and off IONOS virtual Machines through a local Cube running in the estate. This allows for the Cube to shut off the OS gracefully before using the Cloud API v6 to shut down the Server.
 
 See details in the diagram below:
