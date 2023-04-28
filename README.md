@@ -3,7 +3,7 @@ Script for Powering on and off IONOS virtual Machines through a local Cube runni
 
 See details in the diagram below:
 
-![Architectural Diagram showing the Linux Cube connected to a LAN exposing to Internet as well as 2 Linux servers and 1 Windows connected on a Private LAN to the Cube](https://github.com/johansciard/ionos-power-control/blob/main/images/ExampleArchitecture.png?raw=true)
+![Architectural Diagram showing the Linux Cube connected to a LAN exposing to Internet as well as 2 Linux servers and 1 Windows connected on a Private LAN to the Cube](https://github.com/johansciard/ionos-power-control/blob/main/images/ExampleArchitecture.PNG?raw=true)
 
 ## Disclaimer
 This script is a personal project, and is not an officially supported product by IONOS nor does it offer any SLA. Please verify code is up to date and all credentials/information used is secured as per your organizational/individual needs.
