@@ -22,7 +22,7 @@ Setup a an XS Cube with the following configuration:
 apt-get -y install samba-common
 ```
 
-**Note that the Cube script will require relevant permissions to remote shutoff the Servers.**
+**Note: the Cube script will require relevant permissions to remote shutoff the Servers.**
 
 ### Linux Server Setup
 > - Ensure that the root user on the Cube can access the Linux servers on the LAN via SSH keys - either a new SSH key generated from the Cube or that the Public Key RSA for the Servers exist in the Cube.
@@ -66,11 +66,11 @@ Once all properties are as desired, run the following command to shut down all s
 ```
 bash auto-shutdown.sh
 ```
-**Note: For full automation it is recommended to integrate the script with a Linux CRON job to schedule the stop (and start) of the servers at specific times.**
+**Note: for full automation it is recommended to integrate the script with a Linux CRON job to schedule the stop (and start) of the servers at specific times.**
 
 To start servers automatically run the following command or run a scheduled task that interacts with the script on a cron job:
 
 ```
 bash auto-start.sh
 ```
-**Note: There are no configurations necessary on any of the servers to run the automatic start script - the only paramaeters necessary are the LANID, DCDID, and token.**
+**Note: there are no configurations necessary on any of the servers to run the automatic start script - the only paramaeters necessary are the LANID, DCDID, and token.**
