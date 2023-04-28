@@ -30,16 +30,16 @@ apt-get -y install samba-common
 
 ### Windows Server Setup
 > - Connect the Server to the **Private LAN of the Cube** to ensure that the NICs can be picked up correctly for selective shut off/down of specific servers.
-> - Add a remote shutdown security policy - for more information on the steps and considerations: https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/shut-down-the-system
-> - Add registry keys to disable UAC remote restrictions - for more information on the steps and considerations: https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/user-account-control-and-remote-restriction
-> -  Start remote registry service
+> - Add a remote shutdown security policy - for more information on the steps and considerations: https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/shut-down-the-system.
+> - Add registry keys to disable UAC remote restrictions - for more information on the steps and considerations: https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/user-account-control-and-remote-restriction.
+> -  Start remote registry service.
 
 ## Steps to run 
 Inside of the cube (if not using Cloud Init) run:
 ```
 git clone https://github.com/johansciard/ionos-power-control.git
 ```
-**Note if Git is not desired on the cube, create a new file with with the contents of the auto-shutdown.sh**
+**Note if Git is not desired on the cube, create a new file with with the contents of the auto-shutdown.sh.**
 
 Go to the directory of the cloned repos (only if step above was performed, otherwise navigate to the place where file was created):
 ```
@@ -71,4 +71,4 @@ To start servers automatically run the following command or run a scheduled task
 ```
 bash auto-start.sh
 ```
-**Note: There are no configurations necessary on any of the servers to run the automatic start script - the only paramaeters necessary are the LANID, DCDID, and token**
+**Note: There are no configurations necessary on any of the servers to run the automatic start script - the only paramaeters necessary are the LANID, DCDID, and token.**
